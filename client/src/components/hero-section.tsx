@@ -1,5 +1,6 @@
 import { Download, Mail, Phone, Linkedin, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImage from "@assets/Dip 2_1751732561882.jpeg";
 
 export default function HeroSection() {
   const handleResumeDownload = async () => {
@@ -106,9 +107,9 @@ export default function HeroSection() {
           
           <div className="lg:text-right">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
-              alt="Professional engineer portrait" 
-              className="rounded-2xl shadow-2xl mx-auto max-w-sm w-full"
+              src={profileImage} 
+              alt="Engr. Shadman Sakib - Professional Portrait" 
+              className="rounded-2xl shadow-2xl mx-auto max-w-sm w-full object-cover h-[400px]"
             />
           </div>
         </div>
