@@ -6,7 +6,6 @@ const education = [
     field: "Information Technology",
     institution: "Jahangirnagar University",
     graduation: "May 2021",
-    cgpa: "3.56/4.00",
     icon: GraduationCap,
     color: "from-emerald-50 to-emerald-100 border-emerald-200",
     iconBg: "bg-emerald-500",
@@ -16,7 +15,6 @@ const education = [
     field: "Electrical and Electronic Engineering",
     institution: "Khulna University of Engineering and Technology (KUET)",
     graduation: "June 2011",
-    cgpa: "2.87/4.00",
     icon: University,
     color: "from-blue-50 to-blue-100 border-blue-200",
     iconBg: "bg-blue-500",
@@ -26,7 +24,6 @@ const education = [
     field: "Science",
     institution: "Satkhira City College, Satkhira",
     graduation: "September 2006",
-    cgpa: "5.00/5.00",
     icon: School,
     color: "from-purple-50 to-purple-100 border-purple-200",
     iconBg: "bg-purple-500",
@@ -36,7 +33,6 @@ const education = [
     field: "Science",
     institution: "Satkhira Government High School",
     graduation: "June 2004",
-    cgpa: "5.00/5.00",
     icon: BookOpen,
     color: "from-orange-50 to-orange-100 border-orange-200",
     iconBg: "bg-orange-500",
@@ -67,7 +63,6 @@ export default function EducationSection() {
               <div className="space-y-3">
                 <p className="text-slate-700"><strong>Institution:</strong> {edu.institution}</p>
                 <p className="text-slate-700"><strong>Graduation:</strong> {edu.graduation}</p>
-                <p className="text-slate-700"><strong>CGPA:</strong> {edu.cgpa}</p>
               </div>
             </div>
           ))}
