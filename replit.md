@@ -34,7 +34,7 @@ This is a professional portfolio website for Engr. Shadman Sakib, an AI Lead Coa
 - Contact form with validation (firstName, lastName, email, subject, message)
 - Server-side validation using Zod schemas
 - RESTful API endpoints for contact submission and retrieval
-- Currently using in-memory storage with PostgreSQL schema prepared
+- **PostgreSQL database integration with Drizzle ORM**
 
 ### UI Components
 - Comprehensive shadcn/ui component library
@@ -100,6 +100,7 @@ This is a professional portfolio website for Engr. Shadman Sakib, an AI Lead Coa
 ```
 Changelog:
 - July 05, 2025. Initial setup
+- July 05, 2025. Database integration - Added PostgreSQL database with Drizzle ORM, replaced MemStorage with DatabaseStorage
 ```
 
 ## User Preferences
