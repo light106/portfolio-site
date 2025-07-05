@@ -65,7 +65,7 @@ export default function HeroSection() {
               <Button 
                 onClick={handleResumeDownload}
                 variant="outline"
-                className="border-white/30 hover:bg-white/10 text-white hover:text-white"
+                className="border-white text-white bg-transparent hover:bg-white hover:text-navy-800 transition-colors"
                 size="lg"
               >
                 <Download className="mr-2 h-4 w-4" />
