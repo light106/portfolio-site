@@ -15,6 +15,7 @@ const navLinks = [
   { href: "#education", label: "Education" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
+  { href: "/admin", label: "Admin", isRoute: true },
 ];
 
 const languages = [
@@ -38,10 +39,14 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavClick = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const handleNavClick = (href: string, isRoute?: boolean) => {
+    if (isRoute) {
+      window.location.href = href;
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
     setIsOpen(false);
   };
@@ -61,7 +66,7 @@ export default function Navigation() {
             {navLinks.map((link) => (
               <button
                 key={link.href}
-                onClick={() => handleNavClick(link.href)}
+                onClick={() => handleNavClick(link.href, link.isRoute)}
                 className="text-slate-600 hover:text-navy-800 transition-colors"
               >
                 {link.label}
@@ -103,7 +108,7 @@ export default function Navigation() {
               {navLinks.map((link) => (
                 <button
                   key={link.href}
-                  onClick={() => handleNavClick(link.href)}
+                  onClick={() => handleNavClick(link.href, link.isRoute)}
                   className="block w-full text-left text-slate-600 hover:text-navy-800 transition-colors"
                 >
                   {link.label}
