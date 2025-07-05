@@ -88,7 +88,7 @@ export default function Footer() {
         
         <div className="border-t border-slate-800 mt-12 pt-8 text-center">
           <p className="text-slate-400">
-            © 2024 Engr. Shadman Sakib. All rights reserved. | 
+            © 2025 Engr. Shadman Sakib. All rights reserved. | 
             <span className="text-emerald-400 ml-1">Available for new opportunities</span>
           </p>
         </div>
