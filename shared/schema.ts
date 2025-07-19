@@ -1,4 +1,4 @@
-import { pgTable, text, serial, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, text, serial, timestamp, boolean } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -9,6 +9,8 @@ export const contacts = pgTable("contacts", {
   email: text("email").notNull(),
   subject: text("subject").notNull(),
   message: text("message").notNull(),
+  isRead: boolean("is_read").default(false).notNull(),
+  isStarred: boolean("is_starred").default(false).notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
